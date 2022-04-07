@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.css" integrity="sha512-c9N/Xq0n4rQdyCXF4RgrRYAAOSnNJDp8NWILsSUx+33zWyaMbXXvqajgO0UXybRdTGVpxq3FBrcGwabkWsT8OA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <form method="POST" action="/po">
+    <div class="container">
+        
+        <div class="row">
+            <label class="form-label">Name</label>
+              <input type="name" class="form-control" name="name">
+        </div>
+        <div class="row">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control" name="date">
+        </div>
+    </div><br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <label class="form-label">SKU</label>
+                </div>
+                <div class="row">
+                    <select class="form-select w-50" name="sku1" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                </div>
+                <div class="row">
+                    <select class="form-select w-50" name="sku2" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                </div>
+                <div class="row">
+                    <select class="form-select w-50" name="sku3" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                </div>
+                <div class="row">
+                    <select class="form-select w-50" name="sku4" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <label class="form-label">Qty</label>
+                </div>
+                <div class="row">
+                    <input type="number" class="form-control w-50" name="qty1">
+                </div>
+                <div class="row">
+                    <input type="number" class="form-control w-50" name="qty2">
+                </div>
+                <div class="row">
+                    <input type="number" class="form-control w-50" name="qty3">
+                </div>
+                <div class="row">
+                    <input type="number" class="form-control w-50" name="qty4">
+                </div>
+            </div>
+        </div><br>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+    
+</body>
+</html>
