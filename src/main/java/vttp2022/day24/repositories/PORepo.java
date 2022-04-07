@@ -27,6 +27,7 @@ public class PORepo {
             secondupdate =+ jTemplate.update(
             SQL_CREATE_LINE_ITEM,
             i.getQuantity(),
+            po.getOrderid(),
             i.getSku());
         }
         System.out.println(">>>>>>>line item succesfully added: " + (secondupdate > 0));
